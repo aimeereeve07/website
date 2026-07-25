@@ -1079,11 +1079,13 @@ header h1 {
     }
 
     .time{
-        flex: 0 1 150px;
+        text-align: center;
+        flex: 0 1 100px;
     }
 
     .class{
-        flex: 0 1 150px;
+        text-align: center;
+        flex: 0 1 100px;
     }
     /* Footer */
     .footer-cards {
