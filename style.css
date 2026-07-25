@@ -1084,5 +1084,49 @@ header h1 {
 
 }
 
+
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+
+/* Hamburger hidden on desktop */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .hamburger {
+        display: block;
+    }
+
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+
+        width: 100%;
+        background: white;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+
+    /* Show menu when checkbox is ticked */
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
 /* #endregion */
 
