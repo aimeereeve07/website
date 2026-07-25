@@ -1,0 +1,1082 @@
+
+
+/* #endregion */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+}
+
+
+/* #region Header */
+.logo-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-section:hover{
+    opacity: 0.8;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    width: 95%;
+    height: 1px;
+
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(80,80,80,0.4) 10%,
+        rgba(80,80,80,0.4) 90%,
+        transparent
+    );
+}
+
+header img{
+    width: 60px;
+    height: auto;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav{
+    display: flex;
+    gap: clamp(10px, 4vw, 50px);
+
+}
+
+.search-icon{
+    font-size: 20px;
+    color: #1B3A5C;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #1B3A5C;
+    font-family: "Nunito", sans-serif;
+}
+
+
+header h1 { 
+    margin: 0;
+    color: #1B3A5C;
+    font-family: "Playfair Display", serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+/* #endregion */
+
+
+/* #region Home */
+.home {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background: linear-gradient(160deg, #fafaf8 60%, rgb(240, 235, 228) 100%)
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.hero img{
+    width: 150px;
+    height: auto;
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-top: 30px;
+    color: #1B3A5C;
+    font-weight: 400;
+    width:  700px;
+    text-align: center;
+}
+
+.divider {
+    width: 100px;
+    height: 1px;
+    background: #C0392B;
+    margin: 5px auto;
+}
+
+.hero .intro-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    width: 750px;
+    text-align: center;
+    color: #444444;
+    width: 600px;
+}
+
+.hero .sub-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    width: 700px;
+    text-align: center;
+    color: #666666;
+}
+
+.hero .final-text{
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #C0392B;
+    font-weight: 500;
+    width:  700px;
+    text-align: center;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.button1{
+    background: #C0392B;
+    color: white;
+
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.button1:hover{
+    opacity: 0.8;
+}
+
+.button2{
+    background: white;
+    color: #1B3A5C;
+
+    border: 2px solid #1B3A5C;
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.button2:hover{
+    opacity: 0.8;
+}
+
+/* #endregion */
+
+
+/* #region Discover */
+
+.discover {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background: #1B3A5C
+}
+
+.discover-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+.discover-header{
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    margin-top: 16px;
+    color: #D4A843;
+    font-weight: 300;
+    width:  700px;
+    text-align: center; 
+}
+
+.discover-title{
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 400;
+    width:  700px;
+    text-align: center;
+}
+
+.discover-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.discover-card{
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+
+}
+
+.discover-card i {
+    font-size: 40px;
+    color: #D4A843;
+    margin-bottom: 20px;
+}
+
+.card-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-text{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #A8BFCF;
+    font-weight: 400;
+    text-align: center;
+}
+
+.discover-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #A8BFCF;
+    font-weight: 400;
+    text-align: center;
+    width: 600px;
+}
+/* #endregion */
+
+
+/* #region Little Dragons */
+
+.dragons {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background:#fafaf8;
+}
+
+.dragons-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: auto;
+}
+
+.dragons-header{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 16px;
+    color: #C0392B;
+    font-weight: 350;
+    width:  700px;
+    text-align: center; 
+}
+
+.dragons-title{
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    margin-top: 5px;
+    color: #1B3A5C;
+    font-weight: 400;
+    width:  700px;
+    text-align: center;
+}
+
+.dragons-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+    width: 600px;
+}
+
+.dragons-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.dragons-card1{
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: left;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+.dragons-card-title1{
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #1B3A5C;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dragons-benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.dragons-benefits-list li {
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 15px;
+}
+
+.dragons-benefits-list i {
+    color: #C0392B;
+    margin-right: 10px;
+}
+
+.dragons-card2{
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    background: #1B3A5C;
+}
+.dragons-card-title2{
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #A8BFCF;
+    font-weight: 400;
+    text-align: left;
+}
+.dragons-card-text{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #A8BFCF;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* #region Little Dragons belts */
+.dragons-belts{
+    margin: 30px;
+    padding: 50px;
+    border-radius: 15px;
+    flex: 1;
+    text-align: center;
+    background: #F0EBE4;
+}
+
+.dragons-belts-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+    color: #444444;
+    font-weight: 300;
+}
+
+.dragons-belts-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #444444;
+    font-weight: 300;
+    text-align: center;
+}
+
+.belt-cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.purple{
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+}
+
+.purple-bar {
+    width: 50px;
+    height: 12px;
+    background: #8A4FFF;
+    border-radius: 999px;
+    margin: 20px auto;
+}
+
+.purple-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+    color: #8A4FFF;
+    font-weight: 300;
+}
+
+.purple-sub{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+
+}
+
+.red{
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+}
+
+.red-bar {
+    width: 50px;
+    height: 12px;
+    background: #C0392B;
+    border-radius: 999px;
+    margin: 20px auto;
+}
+
+.red-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+    color: #C0392B;
+    font-weight: 300;
+}
+
+.red-sub{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+}
+
+.green{
+    padding: 30px;
+    flex: 1;
+    text-align: center;
+}
+
+.green-bar {
+    width: 50px;
+    height: 12px;
+    background: #15803D;
+    border-radius: 999px;
+    margin: 20px auto;
+}
+
+.green-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    margin-top: 5px;
+    text-align: center;
+    color: #15803D;
+    font-weight: 300;
+}
+
+.green-sub{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #666666;
+    font-weight: 300;
+}
+/* #endregion */
+.dragons-sub{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666666;
+    font-weight: 400;
+    text-align: center;
+}
+/* #endregion */
+
+
+/* #region TKD with us*/
+.us {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background: #fafaf8;
+}
+
+.us-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+.us-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+    color: #444444;
+    font-weight: 400;
+    text-align: center;
+    width: 650px;
+}
+
+.school-cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.school-card {
+    flex: 1;
+    min-width: 500px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    max-width: 600px;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+
+.school-header {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    padding: 25px;
+
+    background: #1B3A5C;
+}
+
+
+.school-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+
+.school-info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.school-title {
+    font-family: "Playfair Display", serif;
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+
+.school-title-sub {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #A8BFCF;
+    margin: 0;
+}
+
+
+.school-sub-title {
+    font-family: "Nunito", sans-serif;
+    font-size: 12px;
+    margin-top: 25px;
+    color: #C0392B;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-inline: 15px;
+}
+
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+
+.contact-item i {
+    color: #1B3A5C;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+
+.contact-text p {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.contact-text a {
+    display: inline-block;
+    margin-top: 8px;
+
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    color: #D4A843;
+    text-decoration: none;
+}
+
+
+.timetable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.timetable-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    margin-inline: 10px;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 12px;
+    background: #FAFAF8;
+}
+
+.day {
+    width: 100px;
+    font-weight: 600;
+}
+
+.time {
+    width: 180px;
+    color: #666;
+}
+
+.class {
+    flex: 1;
+    font-size: 12px;
+}
+/* #endregion */
+
+
+/* #region How do i join*/
+.join {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background: #F0EBE4
+}
+
+.join-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+}
+
+
+
+/* #region Footer*/
+
+.footer {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background:#1B3A5C;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: auto;
+}
+
+.footer-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-card-title{
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    justify-content: left;
+}
+
+.footer-sub-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D4A843;
+    justify-content: left;
+    max-width: 400px;
+
+
+}
+
+.footer-card-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9AB4c6;
+    justify-content: left;
+    max-width: 400px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.15);
+}
+
+.facebook {
+    background:
+        linear-gradient(
+            135deg,
+            #1877F2,
+            #1F5ECF
+        );
+}
+.instagram {
+    background:
+        linear-gradient(
+            135deg,
+            #F58529,
+            #DD2A7B,
+            #8134AF
+        );
+}
+
+
+
+/* #region Media width */
+@media (max-width: 1300px) {
+    .school-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* General spacing */
+    .home,
+    .discover,
+    .dragons,
+    .us,
+    .join,
+    .footer {
+        padding: 20px 15px;
+    }
+
+
+    /* Header */
+    header {
+        padding: 5px 15px;
+    }
+
+    header img {
+        width: 45px;
+    }
+
+    header h1 {
+        font-size: 12px;
+    }
+
+    .header-right {
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* Hero section */
+    .hero {
+        padding-top: 30px;
+    }
+
+    .hero img {
+        width: 100px;
+    }
+
+    .hero h2 {
+        width: 100%;
+        font-size: 32px;
+        margin-top: 20px;
+    }
+
+    .hero .intro-text,
+    .hero .sub-text,
+    .hero .final-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero .intro-text {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .button1,
+    .button2 {
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Discover section */
+    .discover-header,
+    .discover-title,
+    .discover-body {
+        width: 100%;
+    }
+
+    .discover-title {
+        font-size: 30px;
+    }
+
+    .discover-cards {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+    /* Little dragons */
+    .dragons-header,
+    .dragons-title,
+    .dragons-body {
+        width: 100%;
+    }
+
+    .dragons-title {
+        font-size: 30px;
+    }
+
+    .dragons-cards {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .dragons-card1,
+    .dragons-card2 {
+        margin-left: 0;
+    }
+
+
+    /* Belts */
+    .dragons-belts {
+        margin: 15px 0;
+        padding: 25px 15px;
+    }
+
+    .belt-cards {
+        flex-direction: column;
+    }
+
+
+    /* School cards */
+    .us-body {
+        width: 100%;
+    }
+
+    .school-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .school-card {
+        min-width: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .school-header {
+        padding: 15px;
+    }
+
+    .school-title {
+        font-size: 20px;
+    }
+
+
+    /* Timetable */
+    .timetable-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .day,
+    .time {
+        width: auto;
+    }
+
+
+    /* Footer */
+    .footer-cards {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social-button {
+        justify-content: center;
+    }
+
+}
+
+/* #endregion */
+
