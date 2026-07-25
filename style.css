@@ -1021,13 +1021,24 @@ header h1 {
     /* Belts */
     .dragons-belts {
         margin: 15px 0;
-        padding: 25px 15px;
+        padding: 15px 15px;
     }
 
     .belt-cards {
         flex-direction: column;
+
+    }
+    .purple{
+        padding: 5px;
     }
 
+    .red{
+        padding: 5px;
+    }
+
+    .green{
+        padding: 5px;
+    }
 
     /* School cards */
     .us-body {
@@ -1059,11 +1070,12 @@ header h1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2px;
+        gap: 0px;
     }
 
     .day{
-        flex: 0 1 300px;         
+        text-align: center;
+        flex: 0 1 300px;  
     }
 
     .time{
