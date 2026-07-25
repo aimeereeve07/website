@@ -1070,24 +1070,24 @@ header h1 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        column-gap: 30px;
+        column-gap: 20px;
         row-gap: 0px;
     
     }
 
     .day{
         text-align: center;
-        flex: 0 1 300px;  
+        flex: 0 1 100px;  
     }
 
     .time{
         text-align: center;
-        flex: 0 1 150px;
+        flex: 0 1 130px;
     }
 
     .class{
         text-align: center;
-        flex: 0 1 150px;
+        flex: 0 1 300px;
     }
     /* Footer */
     .footer-cards {
