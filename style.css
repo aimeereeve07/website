@@ -1056,16 +1056,24 @@ header h1 {
 
     /* Timetable */
     .timetable-row {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
-        gap: 8px;
+        gap: 2px;
+        justify-content: center;
     }
 
-    .day,
+    .day{
+        width: auto;
+
+    }
     .time {
         width: auto;
     }
 
+    .class{
+        width: auto;
+
+    }
 
     /* Footer */
     .footer-cards {
@@ -1081,8 +1089,8 @@ header h1 {
     .social-button {
         justify-content: center;
     }
-
 }
+
 
 
 
@@ -1127,6 +1135,5 @@ header h1 {
     #menu-toggle:checked ~ nav {
         display: flex;
     }
-
+}
 /* #endregion */
-
