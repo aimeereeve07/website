@@ -41,7 +41,9 @@ header {
     top: 0;
     z-index: 1000;
 
+    width: 100%;
     background: white;
+
     padding: 5px 20px;
     display: flex;
     justify-content: space-between;
