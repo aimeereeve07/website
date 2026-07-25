@@ -1056,25 +1056,23 @@ header h1 {
 
     /* Timetable */
     .timetable-row {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 2px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 2px;
     }
 
     .day{
-        width: auto;
-
+        flex: 0 1 300px;         
     }
-    .time {
-        width: auto;
+
+    .time{
+        flex: 0 1 150px;
     }
 
     .class{
-        width: auto;
-
+        flex: 0 1 150px;
     }
-
     /* Footer */
     .footer-cards {
         flex-direction: column;
