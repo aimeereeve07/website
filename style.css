@@ -1286,19 +1286,16 @@ header h1 {
         width: 100%;
         display: flex;
         flex-direction: row;
-        overflow-x: auto;
-        gap: 8px;
-        padding: 10px 0;
-        margin-bottom: 20px;
+        justify-content: center;
+        gap: 6px;
+        margin-bottom: 25px;
     }
 
     .student-menu-item {
-        flex-shrink: 0;
+        flex: 1;
+        padding: 12px 8px;
         white-space: nowrap;
-    }
-
-    .student-content {
-        width: 100%;
+        text-align: center;
     }
 }
 @media (max-width: 600px) {
