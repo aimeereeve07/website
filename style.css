@@ -109,6 +109,116 @@ header h1 {
 }
 /* #endregion */
 
+/* #region Footer*/
+
+.footer {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    background:#1B3A5C;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: auto;
+}
+
+.footer-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-card-title{
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    justify-content: left;
+}
+
+.footer-sub-title{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D4A843;
+    justify-content: left;
+    max-width: 400px;
+
+
+}
+
+.footer-card-body{
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9AB4c6;
+    justify-content: left;
+    max-width: 400px;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 18px;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.15);
+}
+
+.facebook {
+    background:
+        linear-gradient(
+            135deg,
+            #1877F2,
+            #1F5ECF
+        );
+}
+.instagram {
+    background:
+        linear-gradient(
+            135deg,
+            #F58529,
+            #DD2A7B,
+            #8134AF
+        );
+}
+/* #endregion */
+
+
+
+/*#region HomePage */
 
 /* #region Home */
 .home {
@@ -326,6 +436,120 @@ header h1 {
 }
 /* #endregion */
 
+/* #region Meet The Team */
+
+
+.instructors {
+    padding: 30px;
+    background: #F0EBE4;
+}
+
+.instructors-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.school-instructors {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.school-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.school-heading::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #E2DDD6 15%,
+        #E2DDD6 85%,
+        transparent
+    );
+    z-index: 0;
+}
+
+.school-heading img,
+.school-heading h3 {
+    position: relative;
+    z-index: 1;
+    background: #F0EBE4;
+}
+
+.school-heading img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.school-heading h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 10px;
+}
+
+
+.instructor-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.instructor-card {
+    flex: 1;
+    max-width: 180px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.instructor-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.instructor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructor-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.instructor-info h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+
+.instructor-role {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+
+
+/* #endregion */
 
 /* #region Little Dragons */
 
@@ -657,6 +881,7 @@ header h1 {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -665,7 +890,7 @@ header h1 {
     font-size: 26px;
     color: #ffffff;
     font-weight: 400;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 
@@ -782,121 +1007,42 @@ header h1 {
     padding-bottom: 40px;
 
 }
+/* #endregion */
 
+/* #endregion */
 
-
-/* #region Footer*/
-
-.footer {
-    padding: 30px;
+.contact-timetable {
     display: flex;
-    gap: 30px;
-    background:#1B3A5C;
-}
-
-.footer-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    padding-top: 60px;
-    padding-bottom: 40px;
-    width: auto;
-}
-
-.footer-cards{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.footer-card-title{
-    font-family: "Playfair Display", serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: #ffffff;
-    justify-content: left;
-}
-
-.footer-sub-title{
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #D4A843;
-    justify-content: left;
-    max-width: 400px;
-
-
-}
-
-.footer-card-body{
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #9AB4c6;
-    justify-content: left;
-    max-width: 400px;
-}
-
-.social-buttons {
-    display: flex;
     gap: 15px;
+    margin: 10px;
 }
-
-.social-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    padding: 8px 18px;
-    border-radius: 8px;
-
-    font-size: 14px;
-
-    color: white;
-    text-decoration: none;
-    font-family: "Nunito", sans-serif;
+.contact-day{
+    color: #666;
+    line-height: 1.3;
     font-weight: 600;
-
-    transition:
-        transform 0.2s,
-        box-shadow 0.2s;
 }
+.contact-time{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
 
-.social-button:hover {
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 8px 20px
-        rgba(0,0,0,0.15);
 }
-
-.facebook {
-    background:
-        linear-gradient(
-            135deg,
-            #1877F2,
-            #1F5ECF
-        );
-}
-.instagram {
-    background:
-        linear-gradient(
-            135deg,
-            #F58529,
-            #DD2A7B,
-            #8134AF
-        );
-}
-
-
 
 /* #region Media width */
 @media (max-width: 1300px) {
     .school-cards {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+    .instructor-cards {
+        flex-wrap: wrap;
+    }
+
+    .instructor-card {
+        flex: 0 1 180px;
     }
 }
 
@@ -1150,4 +1296,4 @@ header h1 {
         display: flex;
     }
 }
-/* #endregion  */
+/* #endregion */
