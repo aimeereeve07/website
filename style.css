@@ -136,6 +136,8 @@ header h1 {
     margin-top: 20px;
 }
 
+
+
 .footer-card-title{
     font-family: "Playfair Display", serif;
     font-size: 18px;
@@ -163,6 +165,25 @@ header h1 {
     justify-content: left;
     max-width: 400px;
 }
+
+.footer-bottom {
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.footer-bottom a {
+    color: #9AB4c6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
 
 .social-buttons {
     display: flex;
