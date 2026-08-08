@@ -1095,7 +1095,6 @@ header h1 {
     color: white;
 }
 
-
 .student-display {
     flex: 1;
     min-height: 400px;
@@ -1111,6 +1110,7 @@ header h1 {
 .student-section.active {
     display: block;
 }
+
 
 
 /*embedded handbook*/
@@ -1282,21 +1282,37 @@ header h1 {
 }
 @media (max-width: 768px) {
 
+    .student-dashboard {
+        flex-direction: column;
+        gap: 15px;
+    }
+
     .student-menu {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 6px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
 
     .student-menu-item {
         flex: 1;
         padding: 12px 8px;
-        white-space: nowrap;
         text-align: center;
+        font-size: 0;
     }
+
+    .student-menu-item i {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .student-display {
+        width: 100%;
+        padding: 25px;
+    }
+
 }
 @media (max-width: 600px) {
 
