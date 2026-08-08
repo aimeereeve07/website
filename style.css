@@ -710,7 +710,7 @@ header h1 {
 }
 
 .purple-bar {
-    width: 50px;
+    width: 75px;
     height: 12px;
     background: #8A4FFF;
     border-radius: 999px;
@@ -743,7 +743,7 @@ header h1 {
 }
 
 .red-bar {
-    width: 50px;
+    width: 75px;
     height: 12px;
     background: #C0392B;
     border-radius: 999px;
@@ -775,7 +775,7 @@ header h1 {
 }
 
 .green-bar {
-    width: 50px;
+    width: 75px;
     height: 12px;
     background: #15803D;
     border-radius: 999px;
@@ -1011,6 +1011,7 @@ header h1 {
 
 /* #endregion */
 
+/*#region Contact-Us*/
 .contact-timetable {
     display: flex;
     align-items: center;
@@ -1028,6 +1029,194 @@ header h1 {
     color: #666;
 
 }
+/* #endregion */
+
+/*#region Student-Zone*/
+/*menu*/
+.student-dashboard {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.student-menu {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.student-menu-item {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: white;
+    text-align: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.student-menu-item i {
+    width: 25px;
+}
+
+.student-menu-item:hover {
+    background: #e5dfd7;
+}
+
+.student-menu-item.active {
+    background: #1B3A5C;
+    color: white;
+}
+
+
+.student-display {
+    flex: 1;
+    min-height: 400px;
+    background: white;
+    border-radius: 12px;
+    padding: 35px;
+}
+
+.student-section {
+    display: none;
+}
+
+.student-section.active {
+    display: block;
+}
+
+
+/*embedded handbook*/
+.handbook-viewer {
+    width: 100%;
+    height: 700px;
+    margin-top: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.handbook-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/*patterns*/
+
+.pattern-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.pattern-card {
+    background: #F0EBE4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pattern-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.pattern-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.pattern-card h4 {
+    margin: 12px;
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+}
+
+
+/*Fundrasining*/
+
+.fundraising-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.fundraising-intro {
+    flex: 1;
+}
+
+.fundraising-intro h4,
+.fundraising-steps h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.fundraising-intro p {
+    line-height: 1.6;
+}
+
+.fundraising-image {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.fundraising-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.fundraising-steps {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #d8d0c7;
+}
+
+.fundraising-steps ol {
+    padding-left: 25px;
+    line-height: 1.7;
+}
+
+.fundraising-steps li {
+    margin-bottom: 10px;
+}
+
+.fundraising-footer {
+    margin-top: 25px;
+}
+
+.fundraising-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #1B3A5C;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.fundraising-button:hover {
+    background: #284d70;
+}
+/* #endregion */
+
+
+
+
+
+
 
 /* #region Media width */
 @media (max-width: 1300px) {
@@ -1042,8 +1231,33 @@ header h1 {
     }
 
     .instructor-card {
-        flex: 0 1 180px;
+        flex: 0 1 120px;
     }
+}
+
+@media (max-width: 800px) {
+    .pattern-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .pattern-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .fundraising-content {
+        flex-direction: column;
+    }
+
+    .fundraising-image {
+        width: 100%;
+        max-width: 350px;
+    }
+
 }
 
 @media (max-width: 600px) {
