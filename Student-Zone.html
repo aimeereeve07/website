@@ -1,0 +1,532 @@
+<head>
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="index.html" class="header-logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="South West Taekwondo Academy Logo"
+                    class="logo logo-medium"
+                >
+
+                <h1 class="font-display text-medium">
+                    <b>South West Taekwondo Academy</b>
+                </h1>
+
+            </a>
+
+            <div class="header-container">
+                <nav
+                    class="site-nav"
+                    id="site-nav"
+                    aria-label="Main navigation"
+                >
+
+                    <a href="index.html">Home</a>
+                    <a href="index.html#us">Classes</a>
+                    <a href="Student-Zone.html">Student Zone</a>
+                    <a href="#calander">Calander</a>
+                    <a href="#shop">Shop</a>
+                    <a href="Contact-Us.html">Contact Us</a>
+
+                </nav>
+                
+                <div class="search-container">
+
+                    <button
+                        class="search-toggle"
+                        id="search-toggle"
+                        type="button"
+                        aria-label="Open search"
+                        aria-expanded="false"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <div class="search-box" id="search-box">
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            placeholder="Search..."
+                            aria-label="Search website"
+                        >
+
+                        <button
+                            class="search-submit"
+                            id="search-submit"
+                            type="button"
+                            aria-label="Submit search"
+                        >
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </div>
+                    <div id="search-results-message" class="search-results-message"></div>
+                </div>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="Student-Zone" class="section section-dark">
+        <div class="container">
+
+            <div class="section-header">
+
+                <h1 class="section-label">Your training hub</h1>
+
+                <h1 class="section-title">Student Zone</h1>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <p>Resources, study guides and important information for students and their families.</p>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="Student-Hub" class="section section-light">
+        <div class="container">
+            <div class="student-dashboard">
+
+                <!-- LEFT: MENU -->
+
+                <div class="student-menu">
+
+                    <button class="student-menu-item active"
+                        data-section="handbook">
+                        <i class="fa-solid fa-book"></i>
+                        Student Handbook
+                    </button>
+
+                    <button class="student-menu-item"
+                        data-section="grading">
+                        <i class="fa-solid fa-medal"></i>
+                        Grading Questions
+                    </button>
+
+                    <button class="student-menu-item"
+                        data-section="patterns">
+                        <i class="fa-solid fa-person-running"></i>
+                        Patterns Workshops
+                    </button>
+
+                    <button class="student-menu-item"
+                        data-section="Fundraising">
+                        <i class="fa-solid fa-handshake"></i>
+                        Fundraising
+                    </button>
+
+                    <button class="student-menu-item"
+                        data-section="Safegaurding">
+                        <i class="fa-solid fa-shield"></i>
+                        Safegaurding
+                </button>
+
+            </div>
+
+
+                <!-- RIGHT: CONTENT -->
+
+                <div class="student-display">
+
+                    <div class="student-section active"
+                        id="handbook">
+
+                        <h3 class="font-body text-large jC"><b>Student Handbook</b></h3>
+
+                        <div class="handbook-viewer">
+                            <iframe src='https://simplebooklet.com/embed.php?wpKey=kUs93wteOfNCOGQehXbhL5&source=embed' 
+                            allowfullscreen width='100%' height='100%' style='border: 0; overflow: hidden;' scrolling='no'>
+                        </iframe>
+                        </div>
+
+                    </div>
+
+
+                    <div class="student-section"
+                        id="grading">
+
+                        <h3 class="font-body text-large jC">Grading Questions</h3>
+
+                        <p>
+                            Revision resources and questions
+                            to help you prepare for your next grading.
+                        </p>
+
+                    </div>
+
+
+                    <div class="student-section" id="patterns">
+
+                        <h3 class="font-body text-large jC">Patterns Workshops</h3>
+
+                        <p>
+                            Work through each pattern with our workshop videos.
+                        </p>
+
+                        <div class="pattern-grid">
+
+
+                            <a href="https://youtu.be/ta0swWEl9D4?si=XrFbBEr-U6nWOhxw"
+                            target="_blank"
+                            class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Chon-Ji pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Chon-Ji</h4>
+
+                            </a>
+
+
+                            <a href="https://youtu.be/G49U4qlG_S0?si=75ls5SkOX8GGnJH0"
+                            target="_blank"
+                            class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Dan-Gun pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Dan-Gun</h4>
+
+                            </a>
+
+                            <a href="https://youtu.be/i7UMFA2GZqI?si=CqWnszlYCOGyo2y5"
+                            target="_blank"
+                            class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Do-San pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Do-San</h4>
+
+                            </a>
+
+                            <a href="https://youtu.be/wwvGZhDLNdg?si=To_Ym1QG4IH-ZvMp"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Won-Hyo pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Won-Hyo</h4>
+
+                            </a>                                   
+
+                            <a href="https://youtu.be/DP5itRrJGDc?si=Oq0Wpy1IzeCNFM99"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Yul-Gok pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Yul-Gok</h4>
+
+                            </a>  
+
+                            <a href="https://youtu.be/ZLWbp68OIio?si=Dx8E2aDzvC49Nbrf"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Joong-Gun pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Joong-Gun</h4>
+
+                            </a> 
+
+                            <a href="https://youtu.be/ToDPHYjAV20?si=x5tNdAm2JAP0d2zw"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Toi-Gye pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Toi-Gye</h4>
+
+                            </a> 
+
+
+                            <a href="https://youtu.be/Vu3HyNDtook?si=pyXpGhR9-Zru3PDL"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Hwa-Rang pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Hwa-Rang</h4>
+
+                            </a> 
+
+                            <a href="https://youtu.be/N6P0PD63WvQ?si=jYh8GbvGSjkQvGzO"
+                                target="_blank"
+                                class="pattern-card">
+
+                                <div class="pattern-thumbnail">
+                                    <img src="YOUR-THUMBNAIL.jpg" alt="Choong-moo pattern">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+
+                                <h4>Choong-moo</h4>
+
+                            </a> 
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="student-section"
+                        id="Fundraising">
+
+                        <h3 class="font-body text-large jC">Fundraising</h3>
+
+                        <div class="fundraising-content">
+
+                            <div>
+
+                                <h3 class="font-display text-large jC">Raise Free Funds While You Shop</h3>
+
+                                <p class="margin-top">
+                                    Did you know that whenever you buy anything online —
+                                    from your weekly shop to your annual holiday —
+                                    you could be raising free donations for Fishponds
+                                    Taekwondo Academy with easyfundraising?
+                                </p>
+
+                                <p>
+                                    There are over 4,000 shops and sites on board ready
+                                    to make a donation, including eBay, Argos, John Lewis,
+                                    ASOS, Booking.com and M&S — and it won't cost you a
+                                    penny extra to help us raise funds.
+                                </p>
+
+                            </div>
+
+
+                            <div class="fundraising-image">
+
+                                <img src="images/easyfundraising.png"
+                                    alt="Easyfundraising - Raise Free Funds">
+
+                            </div>
+
+                        </div>
+
+                        <hr class="footer-divider">
+                        <div>
+
+                            <h3 class="font-display text-large jL">How it works</h3>
+
+                            <ol>
+                                <li>
+                                    Go to the Easyfundraising website and join for free.
+                                </li>
+
+                                <li>
+                                    Every time you shop online, go to Easyfundraising
+                                    first to find the site you want and start shopping.
+                                </li>
+
+                                <li>
+                                    After you've checked out, the retailer will make
+                                    a donation to Fishponds Taekwondo Academy at no
+                                    extra cost to you whatsoever!
+                                </li>
+
+                                <li>
+                                    Every penny raised goes back into the club.
+                                    The money supports students with competitions
+                                    and courses approved by the club.
+                                </li>
+                            </ol>
+
+                        </div>
+
+
+                        <div class="margin-top">
+
+                            <p>
+                                There are no catches or hidden charges and Fishponds
+                                Taekwondo Academy will be really grateful for your donations.
+                            </p>
+
+                            <p>
+                                <strong>Thank you for your support!</strong>
+                            </p>
+
+                            <a href="https://www.easyfundraising.org.uk/causes/fishpondstka/"
+                            target="_blank"
+                            class="fundraising-button">
+                                Find out more
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="student-section"
+                        id="Safegaurding">
+
+                        <h3 class="font-body text-large jC">Safegaurding</h3>
+
+                    
+
+                        <p class="margin-top">BMABA are our registered association and Designated Safeguarding Lead (DSL).</p>
+
+                        
+
+                        <p>If you have any concerns about safeguarding or conduct please initially report concerns to:
+
+                        Gavin Reader at swtkd.lydegreen@yahoo.com.</p>
+
+                        
+
+                        <p>If you do not receive a prompt response, have concerns about the club response, 
+                            or if the concern relates to this person, you can escalate to BMABA's professional 
+                            safeguarding team at safeguarding@bmaba.org.uk 
+                        </p>
+
+                        <div class="fundraising-image">
+
+                            <img src="images/BMABA.png"
+                            alt="Easyfundraising - Raise Free Funds">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="footer" class="section section-dark">
+        <div class="container">
+            <div class="cards">
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium jL">About Us</h1>
+                    <p class="text-small margin-top jL">South West Taekwondo Academy is a friendly ITF Taekwondo club 
+                        based across Bristol and South Gloucestershire. We've been building confident, disciplined 
+                        and happy practitioners for years — from tiny Little Dragons to experienced black belts. 
+                        Our club is built on warmth, respect, and a genuine love of the art.</p>
+                </div>
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium jL">Follow Us</h1>
+                    <p class="text-small jL">Stay up to date with gradings, events, competition results and club news on social media.</p>
+                    <p class="text-small margin-top jL">Lyde Green</p>
+                    <div class=" flex-column"> 
+
+                        <a href="https://www.facebook.com/FPTKD.LG"
+                        class="social-button facebook"
+                        target="_blank">
+                            <i class="fa-brands fa-facebook social-button-icon"></i>Facebook</a>
+
+                        <a href="https://www.instagram.com/southwesttaekwondoacademy/" class="social-button instagram" target="_blank">
+                            <i class="fa-brands fa-instagram social-button-icon"></i>Instagram</a>
+
+                    </div>
+
+                    <p class="text-small margin-top jL">Thornbury</p>
+                    <div class=" flex-column"> 
+                        <a href="https://www.facebook.com/thornburytkd"
+                        class="social-button facebook"
+                        target="_blank">
+                            <i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                        <a href="https://www.instagram.com/thornbury.tkd/" class="social-button instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>Instagram</a>
+
+                    </div>
+
+                </div>        
+                
+                
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium margin-top jL">Contact Us</h1>
+                    <p></p> 
+                    <h1 class="text-small text-gold font-body margin-top jL">LYDE GREEN</h1>
+                    <h1 class="font-body text-light-blue text-small jL">07500 764276<br>SWTKD.LydeGreen@yahoo.com</h1>
+                    <p></p>
+                    <h1 class="text-small text-gold font-body margin-top jL">THORNBURY</h1>
+                    <h1 class="font-body text-light-blue text-small jL">07866 685099<br>info@thornbury.co.uk</h1>
+
+                </div>
+                
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <a class="text-light-grey" href="Privacy-Policy.html">Terms of Use & Privacy Policy</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>  
+</body>
