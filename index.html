@@ -1,0 +1,720 @@
+<head>
+    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="#home" class="header-logo">
+
+                <img
+                    src="images/logo.png"
+                    alt="South West Taekwondo Academy Logo"
+                    class="logo logo-medium"
+                >
+
+                <h1 class="font-display text-medium">
+                    <b>South West Taekwondo Academy</b>
+                </h1>
+
+            </a>
+
+            <div class="header-container">
+                <nav
+                    class="site-nav"
+                    id="site-nav"
+                    aria-label="Main navigation"
+                >
+
+                    <a href="#home">Home</a>
+                    <a href="#us">Classes</a>
+                    <a href="Student-Zone.html">Student Zone</a>
+                    <a href="#calander">Calander</a>
+                    <a href="#shop">Shop</a>
+                    <a href="Contact-Us.html">Contact Us</a>
+
+                </nav>
+                
+                <div class="search-container">
+
+                    <button
+                        class="search-toggle"
+                        id="search-toggle"
+                        type="button"
+                        aria-label="Open search"
+                        aria-expanded="false"
+                    >
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <div class="search-box" id="search-box">
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            placeholder="Search..."
+                            aria-label="Search website"
+                        >
+
+                        <button
+                            class="search-submit"
+                            id="search-submit"
+                            type="button"
+                            aria-label="Submit search"
+                        >
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </div>
+                    <div id="search-results-message" class="search-results-message"></div>
+                </div>
+
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="site-nav"
+                >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <section id="home" class="section section-light">
+        <div class="container">
+
+
+            <img src="images/logo.png" alt="South West Taekwondo Academy Logo" class="logo logo-large">
+
+            <h1 class="text-xxlarge jC ">Welcome to South West Taekwondo Academy</h1>
+
+            <div class="divider"></div>
+
+            <p class="text-large margin-top">
+                We're a friendly club where students of all ages and backgrounds
+                come together to learn, grow, and thrive through the art of Taekwondo.
+                Whether you're 4 or 64, complete beginner or seasoned competitor
+                — you'll find a warm welcome here.
+            </p>
+
+            <p class="margin-top">
+                Our instructors are passionate about what they do,
+                and we pride ourselves on a supportive atmosphere where everyone
+                encourages each other. It's not just a martial art — it's a community.
+            </p>
+
+            <h1 class="jC font-display text-large text-orange margin-top">
+                <i>We hope to see you soon!</i>
+            </h1>
+            <div class="flex-column margin-top">
+                <a href="#join" class="button button1">
+                    How do I join
+                </a>
+
+                <a href="#discover" class="button button2">
+                    Learn more
+                </a>
+            </dic>
+
+
+
+
+        </div>
+    </section>
+
+    <section id="discover" class="section section-dark">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <h1 class="section-label">discover</h1>
+
+                <h1 class="section-title">What is Taekwondo?</h1>
+
+                <div class="divider"></div>
+
+            </div>
+            <div class="cards">
+                <div class="card card-dark">
+                    <i class="fa-solid fa-shoe-prints dicover-icon"></i>
+                    <h2 class="text-white font-body">Tae — Foot</h2>
+
+                    <p>
+                        Meaning "to strike or break with the foot." 
+                            Taekwondo is renowned for its dynamic kicking techniques 
+                            — some of the most spectacular in all martial arts.
+                    </p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fa-solid fa-hand-fist discover dicover-icon"></i>
+                    <h2 class="text-white font-body">Kwon — Hand</h2>
+
+                    <p>
+                        Meaning "To punch or destroy with the fist." 
+                        Hand techniques combine precision and power in a balanced, 
+                        complete system of self-defence.
+                    </p>
+                </div>
+                <div class="card card-dark">
+                    <i class="fa-solid fa-route dicover-icon"></i>
+                    <h2 class="text-white font-body">Do — The Way</h2>
+
+                    <p>
+                        Meaning "The art, way or method." 
+                        Taekwondo is a discipline and way of life, 
+                        building confidence, respect, and mental 
+                        strength alongside physical fitness.
+                    </p>
+                </div>
+            </div>
+
+            <p>Originating in Korea, Taekwondo is one of the world's most widely practised martial arts. 
+                It develops coordination, strength, flexibility and self-discipline — 
+                benefits that extend far beyond the dojang into everyday life. 
+                The ITF style we teach emphasises traditional patterns, sparring, 
+                and the tenets of Taekwondo: courtesy, integrity, perseverance, self-control, and indomitable spirit.
+            </p>
+
+
+        </div>
+
+    </section>
+
+    <section id="dragons" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+
+                <h1 class="section-label">ages 4 - 7</h1>
+
+                <h1 class="section-title">Little Dragons Program</h1>
+
+                <div class="divider"></div>
+
+            </div>
+
+            <p>We offer a specialist programme for 4-7 year olds, 
+                using martial arts as a training platform to lay the foundation for many 
+                years of successful Taekwondo training. Each session places an emphasis on fun, 
+                friendship and challenging drills to spark the minds of our youngest students.</p>
+
+            <div class="cards">
+                <div class="card card-light">
+                    <h2>What They'll Learn</h2>
+                    <ul>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Basic strikes, blocks and fundamental techniques</li>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Flexibility, fitness and coordination exercises</li>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Self-defence awareness in an age-appropriate way</li>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Life skills: focus, discipline and listening</li>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Team spirit and leadership through group activities</li>
+                        <li><i class="fa-solid fa-check text-orange margin-bottom"></i>     Concentration and dedication through structured drills</li>
+                    </ul>
+
+                </div>
+                <div class="card card-dark">
+                    <h1 class="text-light-blue text-large">Our Approach</h1>
+                    <p class="text-small jL margin-top">We understand that children develop at different rates. 
+                        With this in mind, our unique syllabus is designed so that every student can achieve — 
+                        while facing their own challenges and triumphs through the process.</p>
+                    <p class="text-small jL margin-top">To support their practical training, we've introduced a series 
+                        of worksheets and study aids that students navigate through with the support of parents, 
+                        carers and instructors alike.</p>
+                    <p class="text-small jL margin-top">Gradings run every 4 months, giving students regular milestones 
+                        to work towards and celebrate. The programme is designed for a smooth transition into the 
+                        junior and full ITF system when they're ready.</p>
+                </div>
+            </div>
+
+
+            <div class="card card-med">
+                <h2 class="dragons-belts-title">Belt Progression</h2>
+                <p class="dragons-belts-body">Students collect badges and progress through three belts across their first three years of training</p>
+
+                <div class="cards">
+                    <div class="card card-medium card-med">
+                        <div class="bar bar-purple"></div>
+                        <h3 class="text-large purple">Purple Belt</h2>
+                        <p>After year 1</p>
+                    </div>
+                    <div class="card card-medium card-med">
+                        <div class="bar bar-red"></div>
+                        <h3 class="text-large red">Red Belt</h2>
+                        <p>After year 2</p>
+                    </div>
+                    <div class="card card-medium card-med">
+                        <div class="bar bar-green"></div>
+                        <h3 class="text-large green">Green Belt</h3>
+                        <p class="">After year 3</p>
+                    </div>
+                </div>
+
+                <p class="dragons-sub">Gradings every 4 months · Badges awarded at each grading · All students progress at their own pace</p>
+            </div>
+
+        </div>
+    </section>  
+    
+    <section id="instructors" class="section section-med">
+        <div class="container">
+            <div class="section-header">
+
+                <h1 class="section-label">the team</h1>
+
+                <h1 class="section-title">Meet The Instructors</h1>
+
+                <div class="divider"></div>
+
+            </div>
+            <p> Yap</p>
+            <div class="logo-label margin-bottom">
+                <img src="images/logo.png"
+                            alt="South West Taekwondo Academy Logo"
+                            class="logo logo-small "> 
+                <p>Lyde Green</p>
+            </div>
+            
+            <div class="cards">
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor1.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">VI Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor2.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">IV Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor3.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">III Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor4.jpeg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">II Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor5.jpeg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">II Dan Black Belt</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+            <div class="logo-label margin-top margin-bottom">
+                <img src="images/logo.png"
+                            alt="South West Taekwondo Academy Logo"
+                            class="logo logo-small "> 
+                <p>Thornbury</p>
+            </div>
+            <div class="cards">
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor6.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">VI Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor7.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">IV Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor8.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">III Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor9.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">II Dan Black Belt</p>
+                    </div>
+                </div>
+
+                <div class=" instructor-card">
+                    <div class="instructor-image">
+                        <img src="images/instructor10.jpg"
+                            alt="Instructor Name">
+                    </div>
+
+                    <div class="instructor-info">
+                        <h3>Instructor Name</h3>
+                        <p class="instructor-role">II Dan Black Belt</p>
+                    </div>
+                </div>
+
+            </div>
+            
+
+    </section>
+
+    <section id="us" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+
+                <h1 class="section-label">our schools</h1>
+
+                <h1 class="section-title">Taekwondo With Us</h1>
+
+                <div class="divider"></div>
+            </div>
+            <p>We run two thriving schools across Bristol and South Gloucestershire, 
+                    both teaching traditional ITF Taekwondo. As a member, you're entitled to train at any 
+                    South West ITF Taekwondo school — your membership covers both locations.</p>
+
+            <div class="cards">
+
+                <!-- Lyde Green -->
+
+                <div class="school-card">
+
+                    <div class="school-header">
+                        <div class="div-left">
+                            <img src="images/logo.png"
+                                alt="School Logo"
+                                class="logo-medium">
+                            <div class="school-info">
+        
+                                    <h1 class="text-xlarge text-white font-display jL">Lyde Green</h1>
+                                    <h1 class="font-body  text-small text-light-blue jL">
+                                        Bristol · ITF Taekwondo
+                                    </h1>                           
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="font-body text-small margin-top jC text-orange">CONTACT & LOCATION</h1>
+
+                    <div class="contact-details">
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot "></i>
+
+                            <div class="contact-text">
+                                <p>
+                                    Lyde Green Community Centre<br>
+                                    Kingfisher Road, Emersons Green<br>
+                                    Bristol, BS16 7FQ
+                                </p>
+
+                                <a href="https://www.google.com/maps/search/?api=1&query=Lyde+Green+Community+Centre+Bristol" target="_blank">View on map →</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+
+                            <div>
+                                <p>07500 764276</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <div>
+                                <p>SWTKD.LydeGreen@yahoo.com</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1 class="font-body text-small margin-top jC text-orange margin-top">TIMETABLE</h1>
+
+                    <div class="timetable">
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Wednesday</b></p>
+                            <p class="time">6:00pm - 7:00pm</p>
+                            <p class="class">All Under 14 Colour Belts</p>
+                        </div>
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Wednesday</b></p>
+                            <p class="time">7:30pm - 8:30pm</p>
+                            <p class="class">All Colour Belts 14+ & All Black Belts</p>
+                        </div>
+
+                        <div class="timetable-row">
+
+                            <p class="day"><b>Friday</b></p>
+                            <p class="time">5:30pm - 6:30pm</p>
+                            <p class="class">Little Dragons (4-7)</p>
+
+                        </div>
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Friday</b></p>
+                            <p class="time">6:30pm - 7:30pm</p>
+                            <p class="class">All Under 14 Colour Belts</p>
+                        </div>
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Friday</b></p>
+                            <p class="time">7:30pm - 8:30pm</p>
+                            <p class="class">All Colour Belts 14+ & All Black Belts</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Thornbury -->
+
+                <div class="school-card">
+
+                    <div class="school-header">
+                        <div class="div-left">
+                            <img src="images/logo.png"
+                                alt="School Logo"
+                                class="logo-medium">
+
+                            <div class="school-info">
+                                <h1 class="jL text-xlarge text-white font-display">Thornbury</h1>
+                                <h1 class="font-body  text-small text-light-blue jL">
+                                    South Gloucestershire · ITF Taekwondo
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="font-body text-small margin-top jC text-orange margin-top">CONTACT & LOCATION</h1>
+
+                    <div class="contact-details">
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div class="contact-text">
+                                <p>
+                                    Thornbury Leisure Centre<br>
+                                    Eastern Way, Thornbury<br>
+                                    South Gloucestershire, BS35 2AH
+                                </p>
+
+                                <a href="https://www.google.com/maps/search/?api=1&query=Thornbury+Leisure+Centre+BS35+2AH" target="_blank">View on map →</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+
+                            <div>
+                                <p>07866 685099</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <div>
+                                <p>info@thornbury.co.uk</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1 class="font-body text-small margin-top jC text-orange margin-top">TIMETABLE</h1>
+
+                    <div class="timetable">
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Monday</b></p>
+                            <p class="time">7:00pm - 8:00pm</p>
+                            <p class="class">
+                                All Colour Belts 13+ & All Black Belts
+                            </p>
+                        </div>
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Thursday</b></p>
+                            <p class="time">6:00pm - 6:45pm</p>
+                            <p class="class">Students Aged 4-12</p>
+                        </div>
+
+                        <div class="timetable-row">
+                            <p class="day"><b>Thursday</b></p>
+                            <p class="time">7:00pm - 8:00pm</p>
+                            <p class="class">
+                                All Colour Belts 13+ & All Black Belts
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="section section-med">
+        <div class="container">
+            <div class="section-header">
+
+                <h1 class="section-label">Get started</h1>
+
+                <h1 class="section-title">How Do I Join?</h1>
+
+                <div class="divider"></div>
+            </div>
+            <p>idk</p>
+
+            <div class="cards">
+        </div>
+    </section>
+
+    <section id="footer" class="section section-dark">
+        <div class="container">
+            <div class="cards">
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium jL">About Us</h1>
+                    <p class="text-small margin-top jL">South West Taekwondo Academy is a friendly ITF Taekwondo club 
+                        based across Bristol and South Gloucestershire. We've been building confident, disciplined 
+                        and happy practitioners for years — from tiny Little Dragons to experienced black belts. 
+                        Our club is built on warmth, respect, and a genuine love of the art.</p>
+                </div>
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium jL">Follow Us</h1>
+                    <p class="text-small jL">Stay up to date with gradings, events, competition results and club news on social media.</p>
+                    <p class="text-small margin-top jL">Lyde Green</p>
+                    <div class=" flex-column"> 
+
+                        <a href="https://www.facebook.com/FPTKD.LG"
+                        class="social-button facebook"
+                        target="_blank">
+                            <i class="fa-brands fa-facebook social-button-icon"></i>Facebook</a>
+
+                        <a href="https://www.instagram.com/southwesttaekwondoacademy/" class="social-button instagram" target="_blank">
+                            <i class="fa-brands fa-instagram social-button-icon"></i>Instagram</a>
+
+                    </div>
+
+                    <p class="text-small margin-top jL">Thornbury</p>
+                    <div class=" flex-column"> 
+                        <a href="https://www.facebook.com/thornburytkd"
+                        class="social-button facebook"
+                        target="_blank">
+                            <i class="fa-brands fa-facebook"></i>Facebook</a>
+
+                        <a href="https://www.instagram.com/thornbury.tkd/" class="social-button instagram" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>Instagram</a>
+
+                    </div>
+
+                </div>        
+                
+                
+                <div class="card card-dark">
+                    <h1 class="text-white text-medium margin-top jL">Contact Us</h1>
+                    <p></p> 
+                    <h1 class="text-small text-gold font-body margin-top jL">LYDE GREEN</h1>
+                    <h1 class="font-body text-light-blue text-small jL">07500 764276<br>SWTKD.LydeGreen@yahoo.com</h1>
+                    <p></p>
+                    <h1 class="text-small text-gold font-body margin-top jL">THORNBURY</h1>
+                    <h1 class="font-body text-light-blue text-small jL">07866 685099<br>info@thornbury.co.uk</h1>
+
+                </div>
+                
+            </div>
+            <hr class="footer-divider">
+            <div>
+                <a class="text-light-grey" href="Privacy-Policy.html">Terms of Use & Privacy Policy</a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>  
+</body>
+        
