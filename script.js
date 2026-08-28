@@ -58,7 +58,8 @@ const pages = [
     "index.html",
     "Privacy-Polict.html",
     "Contact-Us.html",
-
+    "Student-Zone.html",
+    "Shop.html"
 ];
 
 
